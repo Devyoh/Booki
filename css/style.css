@@ -1,0 +1,1180 @@
+/** default **/
+
+* {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+
+
+.boldText,
+.hiddenWord {
+    font-weight: bolder;
+}
+
+body {
+    margin: 0 3rem 0 3rem;
+}
+
+nav {
+    min-width: 100%;
+    max-width: 1400px;
+    min-height: 10vh;
+    line-height: 80px;
+}
+
+footer {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 0;
+}
+
+/** Boutons navigation + animations **/
+a {
+    position: relative;
+}
+
+.flexHead {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    max-height: 220px;
+}
+
+.HostingSection {
+    display: flex;
+    min-width: 100%;
+}
+
+/** Cards (image + body) **/
+.dispositionCard {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.popularCardContainer {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(237, 237, 237);
+}
+
+.hostContainer {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+}
+
+.spanFilter {
+    margin-top: 2rem;
+}
+
+.card,
+.card-v {
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0px 5px 20px #999;
+    flex-wrap: wrap;
+}
+
+.StarRating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.StarRating-v {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.card {
+    min-width: 50%;
+    max-width: 100%;
+    min-height: 70%;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 0.25rem;
+}
+
+.card-v {
+    min-width: 90%;
+    max-width: 100%;
+    min-height: 80%;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 0.25rem 0 0.25rem 0.25rem;
+    margin: 1rem;
+}
+
+.card-title h3,
+h4 {
+
+    line-height: 0.5rem;
+    hyphens: auto;
+}
+
+.card-v-title h3,
+h4 {
+
+    line-height: 1rem;
+    hyphens: auto;
+}
+
+.card a,
+.card-v a {
+    color: #333;
+    text-decoration: none;
+}
+
+.centerWord {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    line-height: 0.5rem;
+}
+
+.card:hover,
+.card-v:hover,
+.card-entier:hover,
+.card-demi:hover,
+.card-tier:hover,
+.card-majo:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-image {
+    min-width: 250px;
+    min-height: 120px;
+    border-radius: 1rem 1rem 0 0;
+    position: relative;
+}
+
+.card-v-image {
+    min-width: 35%;
+    max-width: 130px;
+    min-height: 130px;
+    max-height: 140px;
+    border-radius: 1rem 0 0 1rem;
+    position: relative;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    position: absolute;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.card-v-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+    position: absolute;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.card-body {
+    min-height: 35%;
+    max-height: 45%;
+    line-height: 0.75rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.card-v-body {
+    line-height: 0.25rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    box-sizing: border-box;
+}
+
+.hiddenIcon {
+    visibility: hidden;
+}
+
+.flexNav a {
+    color: #202122;
+}
+
+/* image logo */
+.logoNav {
+    margin: 3rem 0 0 0.8rem;
+    width: 90px;
+    height: auto;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+/* animation remplissage de l'animation */
+.buttonConfig:hover::after {
+    transform: scaleX(1);
+}
+
+/** Création Input + Personnalisation **/
+/* Bouton recherche */
+.buttonSearch {
+    height: 50px;
+    width: 140px;
+    background: rgb(35, 106, 249);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.ButtonMore {
+    margin-top: 3rem;
+}
+
+.ButtonMore>a {
+    height: 2rem;
+    margin-top: 5rem;
+    color: #202122;
+    text-decoration: none;
+}
+
+/* input */
+.Searching {
+    height: 50px;
+    width: 220px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+/* décalage input (valeurs) */
+.paddingSearch {
+    padding-left: 10px;
+}
+
+
+.borderSearch {
+    width: 400px;
+    border-radius: 1rem;
+    border: 0.5px solid #f2f2f2;
+}
+
+.hiddenWord {
+    margin-left: 15px;
+}
+
+/** Filtres **/
+.filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.filterTextIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    height: 53px;
+    border-radius: 32px;
+    margin-right: 0.75rem;
+}
+
+/* Création de la zone ronde -> icone. */
+.filterIcon {
+    border-radius: 25px;
+    width: 55px;
+    height: 55px;
+    color: #0065fc;
+    background-color: #e3eeff;
+}
+
+/* Espace les mot des bordures. */
+.margText {
+    margin: 0 0.7rem;
+}
+
+/* Décalage du bouton lors de son survol. */
+.filterTextIcon:hover {
+    cursor: pointer;
+    transform: translate(0, -10%);
+    transition-duration: .5s;
+}
+
+
+/* effet sur la zone de l'icone lors du survol du bouton. */
+.filterTextIcon:hover>.filterIcon {
+    background-color: #0a5faf;
+    color: aliceblue;
+}
+
+/**card activités**/
+
+.ActCards {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    max-width: 1350px;
+    height: 500px;
+    gap: 2rem;
+}
+
+.ActCards>a {
+    text-decoration: none;
+    color: #202122;
+}
+
+.card-majo,
+.card-demi,
+.card-entier,
+.card-tier {
+    width: 25%;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 5px 0 #eaeaea;
+    overflow: hidden;
+}
+
+.card-demi>img {
+    height: 71%;
+}
+
+.card-demi {
+    height: 42%;
+}
+
+.card-entier>img {
+    height: 87%;
+}
+
+.card-entier {
+    height: 91%;
+}
+
+.card-majo>img {
+    height: 75%;
+}
+
+.card-majo {
+    height: 50%;
+}
+
+.card-tier>img {
+    height: 65%;
+}
+
+.card-tier {
+    height: 34%;
+}
+
+.card-majo>img,
+.card-demi>img,
+.card-entier>img,
+.card-tier>img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.title {
+    padding-left: 1rem;
+}
+
+/** Apparences **/
+/* Apparence bouton nav */
+.buttonConfig {
+    text-align: center;
+    text-decoration: none;
+}
+
+/* couleurs icones */
+.starBlue {
+    color: #1640f8;
+}
+
+.greyBg {
+    background: #e6e7e8;
+}
+
+
+.starGrey {
+    color: #c2baba;
+}
+
+/* couleurs grise bg */
+
+
+.BgHostingContainer {
+    background: rgb(236, 236, 236);
+}
+
+/* couleur bleue bg*/
+.blueBg {
+    background: rgb(48, 46, 170);
+}
+
+/* Bordure personnalisée grise */
+
+/* Apparence icones */
+.iconSize {
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.icon-box {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    border: 2px solid #dedede;
+    color: blue;
+}
+
+/* apparence curseur */
+.pointer {
+    cursor: pointer;
+}
+
+/* suppression des bordures */
+.noBorder {
+    border: none;
+}
+
+/* Annule apparence de boutons */
+.noDecoration {
+    text-decoration: none;
+}
+
+/** Règles de Disposition (flexbox) **/
+/* Centre mes éléments */
+.End {
+    text-align: end;
+}
+
+/* Flex -> Space-around */
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Flex -> space-between */
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexSection {
+    display: flex;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Taginfo {
+    padding-top: 1rem
+}
+
+.spacingText {
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+}
+
+.hostingContainer {
+    padding: 2rem;
+}
+
+.flex1 {
+    flex: 33%
+}
+
+
+/* Centre du texte verticalement*/
+.textAlign {
+    padding-top: 0.1rem;
+    text-align: center;
+}
+
+.Spacing {
+    margin-left: 10px;
+}
+
+.Spacing25 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.footerRules {
+    min-width: 1200px;
+    max-width: 1400px;
+    bottom: 0;
+    margin-top: 25px;
+}
+
+.popularImage {
+    border-radius: 15px 0 0 15px;
+}
+
+.titleContainer {
+    min-width: 40%;
+    max-width: 75%;
+    padding: 0 25px;
+}
+
+.TitleDisposition {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardTitle {
+    padding-left: .05rem;
+}
+
+.ratingComponent {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.StarPopular {
+    max-width: 40%;
+    min-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cardHostTitle {
+    margin-top: 50px;
+    line-height: 5px;
+    margin-left: 15px;
+}
+
+.hostImage {
+    border-radius: 15px 15px 0 0;
+}
+
+.iconBottom {
+    margin-top: 10px;
+}
+
+.CardContainer {
+    height: 580px;
+}
+
+.cardHosting {
+    max-width: 300px;
+    max-height: 220px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 5px 20px #999;
+}
+
+.container {
+    min-width: 200px;
+    max-width: 66%;
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.popularContainer {
+    background: rgb(236, 236, 236);
+    min-width: 20rem;
+    max-width: 33%;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+
+
+/************** FOOTER ****************/
+
+.footerList {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footerList {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.footerStyle {
+    background: rgb(236, 236, 236);
+}
+
+.ListGroup {
+    flex: 1;
+    margin-left: 25px;
+}
+
+.flexFooter a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flexFooter li {
+    line-height: 30px;
+}
+
+.flexFooter {
+    background: rgb(236, 236, 236);
+    display: flex;
+}
+
+.buttonFooter {
+    margin-top: 100px;
+}
+
+.filterTitle {
+    padding-right: 2rem;
+}
+
+.ActContainer {
+    min-height: 600px;
+    max-height: 1800px;
+    min-width: 678px;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleActContainer {
+    padding-left: 1rem;
+    justify-content: flex-start;
+}
+
+.actCardContainer {
+    padding: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+}
+
+
+/*******************  On Tablet Screen  ******************/
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #search {
+        margin-left: 2rem;
+    }
+
+    .HostingSection {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .BgHostingContainer {
+        background: none;
+    }
+
+    .popularContainer {
+        background: rgb(236, 236, 236);
+        min-width: 100%;
+        border-radius: unset;
+    }
+
+    .ActContainer {
+        height: 2000px;
+        min-width: 80%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ActCards {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        max-width: 950px;
+        min-height: 100%;
+    }
+
+    .card-entier,
+    .card-majo,
+    .card-tier,
+    .card-demi {
+        margin: auto;
+        min-width: 70%;
+        max-width: 80%;
+        max-height: 250px;
+        margin-bottom: 1rem;
+    }
+
+    .card-entier>img,
+    .card-majo>img,
+    .card-tier>img,
+    .card-demi>img {
+        height: 75%;
+    }
+
+    .hostContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+    }
+
+
+    .flexSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexHead {
+        max-width: 990px;
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexHosting {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        max-width: 990px;
+        height: auto;
+    }
+
+    .logoNav {
+        width: 150px;
+    }
+
+    img .logoNav {
+        width: 100px;
+        height: auto;
+    }
+
+    .logoImg {
+        max-height: 120px;
+        margin: auto;
+    }
+
+    .flexNav {
+        max-height: 80px;
+        display: flex;
+    }
+
+    .flexNav a {
+        min-width: 50%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .buttonConfig::after {
+        content: '';
+        transform: scaleX(0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: .3em;
+        background: #1640f8;
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+    .card-v {
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 100px;
+        max-height: 300px;
+        overflow: hidden;
+        padding: 0.25rem 0 0.25rem 0.25rem;
+        margin: 1rem auto;
+
+    }
+
+    /**  Header Tablet screen  **/
+
+    /**  Body Tablet screen **/
+    /* couleur grise */
+
+    /** Main Tablet screen **/
+
+    /** Footer Tablet Screen **/
+
+    .footerRules {
+        max-width: 990px;
+        padding-left: 2rem;
+    }
+
+    .flexFooter {
+        max-width: 992px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .ListGroup {
+        width: 33%;
+        flex: none;
+        padding-left: 1rem;
+        margin: 0;
+    }
+
+}
+
+
+/********************  On Mobile Screen  **************/
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .centerWord {
+        margin: auto;
+        line-height: 1;
+    }
+
+    /**  Header mobile screen  **/
+    .hostContainer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: auto;
+
+    }
+
+    .BgHostingContainer {
+        background: none;
+    }
+
+    .popularContainer {
+        background: rgb(236, 236, 236);
+        min-width: 100%;
+        border-radius: unset;
+        padding: 1rem;
+    }
+
+    .logoImg {
+        margin: auto;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .card-v {
+        min-width: 90%;
+        max-width: 100%;
+        min-height: 100px;
+        max-height: 250px;
+        overflow: hidden;
+        padding: 0.25rem 0 0.25rem 0.25rem;
+        margin: 1rem;
+    }
+
+    .card-v-image {
+        min-width: 35%;
+        max-width: 130px;
+        max-height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        position: relative;
+
+    }
+
+    .card-v-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        object-fit: cover;
+        position: absolute;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+    }
+
+    .ActContainer {
+        min-height: 1800px;
+        max-height: 100%;
+        min-width: 80%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .ActCards {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: center;
+        max-width: 750px;
+        height: 2000px;
+    }
+
+    .card-entier,
+    .card-majo,
+    .card-tier,
+    .card-demi {
+        min-width: 90%;
+        max-width: 100%;
+        min-height: 10%;
+        max-height: 250px;
+        margin-top: 2rem;
+    }
+
+    .card-entier>img,
+    .card-majo>img,
+    .card-tier>img,
+    .card-demi>img {
+        height: 80%;
+    }
+
+
+    .HostingSection {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filterTitle {
+        width: 100vw;
+    }
+
+    .filterTextIcon {
+        margin: 0.3rem;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexNav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flexTitle {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .hiddenWord {
+        display: none;
+    }
+
+    .hiddenIcon {
+        visibility: visible;
+    }
+
+    img {
+        display: flex;
+        align-content: center;
+        margin: auto;
+    }
+
+    .logoNav {
+        width: 150px;
+        height: auto;
+    }
+
+    .container {
+        max-width: 100%;
+        max-height: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /** Filtres **/
+
+    .filter {
+        display: flex;
+        align-items: center;
+    }
+
+    /** Nav mobile screen **/
+
+    /* Apparence Barre de navigation */
+    nav {
+        width: 100%;
+        max-height: 2rem;
+    }
+
+    /* Boutons NavBar noir sans décoration */
+    .buttonConfig {
+        width: 50%;
+        height: 80px;
+        text-align: center;
+    }
+
+    /* écriture en gras */
+
+
+
+    /**  Main mobile screen **/
+
+
+
+    #search {
+        margin-left: 1rem;
+    }
+
+    .buttonSearch {
+        height: 50px;
+        width: 50px;
+        background: rgb(0, 140, 255);
+        color: white;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+
+    /* input */
+    .Searching {
+        height: 50px;
+        width: 200px;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .borderSearch {
+        width: 300px;
+        border-radius: 1rem;
+        border: 0.5px solid #f2f2f2;
+    }
+
+    .block {
+        display: block;
+    }
+
+
+    /** Footer Mobile Screen **/
+
+    .ListGroup {
+        padding-left: 3rem;
+    }
+
+    .flexFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-left: 0;
+
+    }
+
+}
+
+/*****************************  On Pc Screen  **************************/
+
+@media only screen and (min-width: 992px) {
+
+    /**  Header pc screen  **/
+
+
+    .flexHead {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        min-width: 900px;
+        max-width: 1100px;
+        height: auto;
+        border-radius: 1.5rem;
+    }
+
+    .flexNav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .flexNav a {
+        width: 140px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .buttonConfig::after {
+        content: '';
+        transform: scaleX(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: .3em;
+        background: #1640f8;
+        z-index: -1;
+        opacity: 0.8;
+        transition: transform 1s;
+    }
+
+    /**  Body pc screen **/
+    /* couleur grise */
+
+    /** Main pc screen **/
+
+    /** Footer pc Screen **/
+
+}
